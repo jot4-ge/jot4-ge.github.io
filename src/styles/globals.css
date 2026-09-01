@@ -143,3 +143,9 @@ h1.hero-name .accent { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   .bg-grid { will-change: auto; }
 }
+
+/* canvas de partículas do cursor (global) */
+.cursor-canvas {
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 1;
+}
