@@ -76,6 +76,8 @@ h1.hero-name .accent { color: var(--accent); }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   section { padding: 70px 0; }
 }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .status .dot { animation: none; }
