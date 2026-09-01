@@ -32,12 +32,6 @@ body::before {
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
   background-size: 46px 46px; opacity: .14; pointer-events: none; z-index: 0;
 }
-body::after {
-  content: ""; position: fixed; top: -10%; left: 50%; transform: translateX(-50%);
-  width: 80vw; height: 60vh;
-  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%);
-  pointer-events: none; z-index: 0; filter: blur(30px);
-}
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; position: relative; z-index: 1; }
 
 section { padding: 96px 0; position: relative; }
@@ -124,4 +118,21 @@ h1.hero-name .accent { color: var(--accent); }
 @media (max-width: 760px) {
   .frame { inset: 8px; }
   .frame-label.br { display: none; }
+}
+
+/* glow do hero como elemento (segue o mouse) */
+.hero-glow {
+  position: fixed; top: -10%; left: 50%;
+  width: 80vw; height: 60vh;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%);
+  pointer-events: none; z-index: 0; filter: blur(30px);
+  will-change: transform;
+}
+
+/* estado inicial dos elementos animados na entrada (anime.js revela) */
+.hero-anim { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim { opacity: 1; }
+  .hero-glow { will-change: auto; }
 }
