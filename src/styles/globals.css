@@ -25,13 +25,6 @@ html.lenis, html.lenis body { height: auto; }
 
 ::selection { background: var(--accent); color: #fff; }
 
-body::before {
-  content: ""; position: fixed; inset: 0;
-  background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size: 46px 46px; opacity: .14; pointer-events: none; z-index: 0;
-}
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; position: relative; z-index: 1; }
 
 section { padding: 96px 0; position: relative; }
@@ -135,4 +128,18 @@ h1.hero-name .accent { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   .hero-anim { opacity: 1; }
   .hero-glow { will-change: auto; }
+}
+
+/* grid de fundo como elemento (parallax sutil no mouse) */
+.bg-grid {
+  position: fixed; inset: -40px;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 46px 46px;
+  opacity: .14; pointer-events: none; z-index: 0;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-grid { will-change: auto; }
 }
