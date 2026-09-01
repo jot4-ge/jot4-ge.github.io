@@ -93,3 +93,35 @@ h1.hero-name .accent { color: var(--accent); }
   .reveal { opacity: 1; transform: none; transition: none; }
   .status .dot { animation: none; }
 }
+
+/* ===== frame overlay global ===== */
+.frame { position: fixed; inset: 14px; pointer-events: none; z-index: 60; }
+.frame::before {
+  content: ""; position: absolute; inset: 0;
+  border: 1px solid var(--line);
+  transition: border-color .4s ease;
+}
+.frame-corner {
+  position: absolute; width: 14px; height: 14px;
+  border-color: var(--accent); border-style: solid; border-width: 0;
+}
+.frame-corner.tl { top: 0; left: 0; border-top-width: 2px; border-left-width: 2px; }
+.frame-corner.tr { top: 0; right: 0; border-top-width: 2px; border-right-width: 2px; }
+.frame-corner.bl { bottom: 0; left: 0; border-bottom-width: 2px; border-left-width: 2px; }
+.frame-corner.br { bottom: 0; right: 0; border-bottom-width: 2px; border-right-width: 2px; }
+
+.frame-label {
+  position: absolute; font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: .5px; color: var(--text-faint);
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  padding: 3px 8px; white-space: nowrap;
+}
+.frame-label .accent { color: var(--accent); }
+.frame-label.tl { top: -10px; left: 20px; }
+.frame-label.bl { bottom: -10px; left: 20px; }
+.frame-label.br { bottom: -10px; right: 20px; }
+
+@media (max-width: 760px) {
+  .frame { inset: 8px; }
+  .frame-label.br { display: none; }
+}
