@@ -7,6 +7,7 @@ import { RichText } from './RichText';
 export function Hero() {
   const { t } = useApp();
   const titleRef = useMouseParallax<HTMLHeadingElement>(18);
+  const metricsRef = useMouseParallax<HTMLDivElement>(8);
   const glowRef = useRef<HTMLDivElement>(null);
   const rootRef = useRef<HTMLElement>(null);
 
@@ -89,7 +90,7 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="metrics hero-anim">
+        <div className="metrics hero-anim" ref={metricsRef}>
           <div className="metric"><div className="k">{t('m_projects')}</div><div className="v">2</div></div>
           <div className="metric"><div className="k">{t('m_tests')}</div><div className="v">50+</div></div>
           <div className="metric"><div className="k">{t('m_langs')}</div><div className="v">5+</div></div>
