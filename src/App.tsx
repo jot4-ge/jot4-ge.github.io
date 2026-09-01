@@ -5,6 +5,7 @@ import { CursorParticles } from './components/CursorParticles';
 import { Frame } from './components/Frame';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
+import { About } from './components/About';
 
 export default function App() {
   useLenis();
@@ -17,6 +18,7 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
+        <About />
       </main>
     </AppProvider>
   );
