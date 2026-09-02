@@ -157,7 +157,12 @@ h1.hero-name .accent { color: var(--accent); }
 .about-grid p { color: var(--text-dim); font-size: 16px; }
 .about-grid p b { color: var(--text); font-weight: 500; }
 .chips { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 6px; }
-.chip { font-family: var(--mono); font-size: 12px; color: var(--text-dim); border: 1px solid var(--line-bright); padding: 5px 11px; border-radius: 6px; }
+.chip { font-family: var(--mono); font-size: 12px; color: var(--text-dim); border: 1px solid var(--line-bright); padding: 5px 11px; border-radius: 6px; cursor: default; transition: color .2s, border-color .2s, transform .2s, box-shadow .2s; }
+.chip:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 4px 14px color-mix(in srgb, var(--accent) 18%, transparent); }
+@media (prefers-reduced-motion: reduce) {
+  .chip { transition: color .2s, border-color .2s; }
+  .chip:hover { transform: none; box-shadow: none; }
+}
 
 /* ===== spotify: card vivo ===== */
 .spotify {
