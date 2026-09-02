@@ -169,6 +169,10 @@ h1.hero-name .accent { color: var(--accent); }
   max-width: 460px; margin-top: 14px;
   border: 1px solid var(--line); background: var(--bg-card);
   border-radius: 14px; overflow: hidden;
+  transform-style: preserve-3d; will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spotify { will-change: auto; }
 }
 
 /* faixa em destaque */
