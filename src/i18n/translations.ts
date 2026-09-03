@@ -30,7 +30,7 @@ export const translations = {
     about_2:
       'Atuo como **desenvolvedor fullstack**: fui **Product Owner e dev** no ContraDito, uma plataforma de dados real com pipeline de IA, e desenvolvo sozinho o **Kinetic**, do conceito à arquitetura. Também sou **monitor de Matemática Discreta** na UnB — ajudar os colegas a destravarem afia meu gosto por explicar e resolver problemas.',
     about_3:
-      'Fora do código, me movo por **disciplina**: treino, pratico **artes marciais** e já joguei muitos esportes — campeão de futsal e medalhista no atletismo. Essa mentalidade de treino é a mesma que levo pra engenharia: consistência, evolução e vontade de vencer o próximo desafio.',
+      'Fora do código, me movo por **disciplina**: treino, pratico **artes marciais** e já joguei muitos esportes — campeão de futsal e medalhista no atletismo. E, seja no treino ou codando de madrugada, **sempre tem uma playlist rodando** — música é o combustível que mantém o ritmo. Essa mentalidade de treino é a mesma que levo pra engenharia: consistência, evolução e vontade de vencer o próximo desafio.',
     sp_t: '// no loop enquanto codo',
     sp_now: 'em destaque',
     sp_m: 'ver no Spotify →',
@@ -64,7 +64,7 @@ export const translations = {
     about_2:
       "I work as a **fullstack developer**: I was **Product Owner and dev** on ContraDito, a real data platform with an AI pipeline, and I solo-develop **Kinetic**, from concept to architecture. I'm also a **Discrete Mathematics teaching assistant** at UnB — helping classmates get unstuck sharpens my love for explaining and solving problems.",
     about_3:
-      'Outside of code, I run on **discipline**: I train, practice **martial arts** and have played many sports — futsal champion and athletics medalist. That training mindset is the same one I bring to engineering: consistency, growth and the drive to beat the next challenge.',
+      'Outside of code, I run on **discipline**: I train, practice **martial arts** and have played many sports — futsal champion and athletics medalist. And whether training or coding late at night, **there is always a playlist going** — music is the fuel that keeps the rhythm. That training mindset is the same one I bring to engineering: consistency, growth and the drive to beat the next challenge.',
     sp_t: '// on loop while I code',
     sp_now: 'featured',
     sp_m: 'open in Spotify →',
