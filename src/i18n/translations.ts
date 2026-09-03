@@ -34,6 +34,30 @@ export const translations = {
     sp_t: '// no loop enquanto codo',
     sp_now: 'em destaque',
     sp_m: 'ver no Spotify →',
+
+    eb_projects: 'o que eu construí',
+    projects_title: 'Projetos que resolvem problemas reais.',
+    p_role: 'meu papel',
+    p_stack: 'stack',
+    p_highlight: 'destaque técnico',
+    p_code: 'ver código',
+    p_live: 'ver ao vivo →',
+
+    cd_name: 'ContraDito',
+    cd_tag: 'Transparência parlamentar com dados e IA',
+    cd_desc:
+      'Plataforma que cruza o que os parlamentares brasileiros **dizem** com **como votam**. Reúne discursos, votações e proposições da Câmara e do Senado numa interface limpa e neutra — mais de **887 parlamentares**, **53 mil discursos** e **51 mil votos** abertos para consulta.',
+    cd_role: 'Product Owner e desenvolvedor fullstack — conduzi o produto, a extração de dados e a API, e atuei no frontend.',
+    cd_highlight:
+      'Cruzar dezenas de milhares de discursos e votos estourava a memória do ambiente. Reestruturei o processamento em lotes, liberando memória a cada etapa e transformando um build que quebrava num fluxo estável e reprodutível.',
+
+    kn_name: 'Kinetic',
+    kn_tag: 'PWA de rotina, do conceito à arquitetura',
+    kn_desc:
+      'Meu laboratório de produto: um **PWA completo** para organizar rotina, instalável e com funcionamento offline como um app nativo. Nasceu de uma necessidade real e virou um projeto onde exercito produto, design e engenharia de ponta a ponta.',
+    kn_role: 'Projeto solo — assumi todos os papéis: Product Owner, identidade visual, interface e toda a implementação.',
+    kn_highlight:
+      'Construí a camada offline que faz o app funcionar sem conexão e se comportar como nativo no celular, com estado persistente e experiência instalável (PWA).',
   },
   en: {
     nav_about: '// about',
@@ -68,6 +92,30 @@ export const translations = {
     sp_t: '// on loop while I code',
     sp_now: 'featured',
     sp_m: 'open in Spotify →',
+
+    eb_projects: 'what I have built',
+    projects_title: 'Projects that solve real problems.',
+    p_role: 'my role',
+    p_stack: 'stack',
+    p_highlight: 'technical highlight',
+    p_code: 'view code',
+    p_live: 'view live →',
+
+    cd_name: 'ContraDito',
+    cd_tag: 'Parliamentary transparency with data and AI',
+    cd_desc:
+      'A platform that cross-references what Brazilian lawmakers **say** with **how they vote**. It gathers speeches, votes and bills from the House and Senate in a clean, neutral interface — over **887 lawmakers**, **53k speeches** and **51k votes** open to the public.',
+    cd_role: 'Product Owner and fullstack developer — I led the product, data extraction and the API, and worked on the frontend.',
+    cd_highlight:
+      'Cross-referencing tens of thousands of speeches and votes was blowing past the environment memory. I restructured the processing into batches, freeing memory at each step and turning a failing build into a stable, reproducible pipeline.',
+
+    kn_name: 'Kinetic',
+    kn_tag: 'A routine PWA, from concept to architecture',
+    kn_desc:
+      'My product lab: a **full PWA** to organize routines, installable and working offline like a native app. It started from a real need and became where I exercise product, design and engineering end to end.',
+    kn_role: 'Solo project — I took on every role: Product Owner, visual identity, interface and the entire implementation.',
+    kn_highlight:
+      'I built the offline layer that lets the app work without a connection and behave like a native app on mobile, with persistent state and an installable experience (PWA).',
   },
 } as const;
 

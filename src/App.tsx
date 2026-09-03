@@ -6,6 +6,7 @@ import { Frame } from './components/Frame';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
+import { Projects } from './components/Projects';
 
 export default function App() {
   useLenis();
@@ -19,6 +20,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Projects />
       </main>
     </AppProvider>
   );
