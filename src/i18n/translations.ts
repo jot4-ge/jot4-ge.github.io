@@ -49,7 +49,7 @@ export const translations = {
       'Plataforma que cruza o que os parlamentares brasileiros **dizem** com **como votam**, reunindo discursos, votações e proposições da Câmara e do Senado — mais de **887 parlamentares** e **53 mil discursos** abertos para consulta.',
     cd_role: 'Product Owner e fullstack — conduzi o produto, a integração de dados via APIs e o frontend conectado ao backend.',
     cd_highlight:
-      'O maior desafio foi **orquestrar múltiplas APIs oficiais** da Câmara e do Senado, com formatos e volumes distintos, garantindo dados completos e confiáveis. Estruturei a extração para lidar com o volume sem perder consistência e conectei tudo ao frontend que assumi — do dado bruto à interface.',
+      'O maior desafio foi **orquestrar múltiplas APIs oficiais** da Câmara e do Senado, lidando com **paginação de dezenas de milhares de registros** e **limites de requisição (rate limit)** sem perder dados nem consistência. Estruturei a extração para varrer todo o volume respeitando esses limites e conectei tudo ao frontend que assumi — do dado bruto à interface.',
 
     kn_name: 'Kinetic',
     kn_tag: 'PWA de rotina, do conceito à arquitetura',
@@ -107,7 +107,7 @@ export const translations = {
       'A platform that cross-references what Brazilian lawmakers **say** with **how they vote**, gathering speeches, votes and bills from the House and Senate — over **887 lawmakers** and **53k speeches** open to the public.',
     cd_role: 'Product Owner and fullstack — I led the product, the data integration across APIs, and the frontend wired to the backend.',
     cd_highlight:
-      'The main challenge was **orchestrating multiple official APIs** from the House and Senate, with different formats and volumes, ensuring complete and reliable data. I structured the extraction to handle the volume without losing consistency and wired it all to the frontend I owned — from raw data to interface.',
+      'The main challenge was **orchestrating multiple official APIs** from the House and Senate, handling **pagination across tens of thousands of records** and **request rate limits** without losing data or consistency. I structured the extraction to sweep the full volume while respecting those limits, and wired it all to the frontend I owned — from raw data to interface.',
 
     kn_name: 'Kinetic',
     kn_tag: 'A routine PWA, from concept to architecture',
