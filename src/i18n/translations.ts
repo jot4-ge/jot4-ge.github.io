@@ -46,10 +46,10 @@ export const translations = {
     cd_name: 'ContraDito',
     cd_tag: 'Transparência parlamentar com dados e IA',
     cd_desc:
-      'Plataforma que cruza o que os parlamentares brasileiros **dizem** com **como votam**. Reúne discursos, votações e proposições da Câmara e do Senado numa interface limpa e neutra — mais de **887 parlamentares**, **53 mil discursos** e **51 mil votos** abertos para consulta.',
-    cd_role: 'Product Owner e desenvolvedor fullstack — conduzi o produto, a extração de dados e a API, e atuei no frontend.',
+      'Plataforma que cruza o que os parlamentares brasileiros **dizem** com **como votam**, reunindo discursos, votações e proposições da Câmara e do Senado — mais de **887 parlamentares** e **53 mil discursos** abertos para consulta.',
+    cd_role: 'Product Owner e fullstack — conduzi o produto, a integração de dados via APIs e o frontend conectado ao backend.',
     cd_highlight:
-      'Cruzar dezenas de milhares de discursos e votos estourava a memória do ambiente. Reestruturei o processamento em lotes, liberando memória a cada etapa e transformando um build que quebrava num fluxo estável e reprodutível.',
+      'O maior desafio foi **orquestrar múltiplas APIs oficiais** da Câmara e do Senado, com formatos e volumes distintos, garantindo dados completos e confiáveis. Estruturei a extração para lidar com o volume sem perder consistência e conectei tudo ao frontend que assumi — do dado bruto à interface.',
 
     kn_name: 'Kinetic',
     kn_tag: 'PWA de rotina, do conceito à arquitetura',
@@ -104,10 +104,10 @@ export const translations = {
     cd_name: 'ContraDito',
     cd_tag: 'Parliamentary transparency with data and AI',
     cd_desc:
-      'A platform that cross-references what Brazilian lawmakers **say** with **how they vote**. It gathers speeches, votes and bills from the House and Senate in a clean, neutral interface — over **887 lawmakers**, **53k speeches** and **51k votes** open to the public.',
-    cd_role: 'Product Owner and fullstack developer — I led the product, data extraction and the API, and worked on the frontend.',
+      'A platform that cross-references what Brazilian lawmakers **say** with **how they vote**, gathering speeches, votes and bills from the House and Senate — over **887 lawmakers** and **53k speeches** open to the public.',
+    cd_role: 'Product Owner and fullstack — I led the product, the data integration across APIs, and the frontend wired to the backend.',
     cd_highlight:
-      'Cross-referencing tens of thousands of speeches and votes was blowing past the environment memory. I restructured the processing into batches, freeing memory at each step and turning a failing build into a stable, reproducible pipeline.',
+      'The main challenge was **orchestrating multiple official APIs** from the House and Senate, with different formats and volumes, ensuring complete and reliable data. I structured the extraction to handle the volume without losing consistency and wired it all to the frontend I owned — from raw data to interface.',
 
     kn_name: 'Kinetic',
     kn_tag: 'A routine PWA, from concept to architecture',
