@@ -16,6 +16,7 @@ interface Project {
   code: string;
   live: string;
   reverse?: boolean;
+  logo?: boolean;
 }
 
 const PROJECTS: Project[] = [
@@ -39,7 +40,8 @@ const PROJECTS: Project[] = [
     highlightKey: 'kn_highlight',
     contextKey: 'kn_context',
     stack: ['React', 'TypeScript', 'PWA', 'Vite', 'Vercel'],
-    shot: '/shots/kinetic.png',
+    shot: '/shots/kinetic-logo.png',
+    logo: true,
     code: 'https://github.com/jot4-ge/kinetic',
     live: 'https://kinetic-plum.vercel.app/hoje',
     reverse: true,
@@ -53,9 +55,14 @@ function ProjectRow({ project }: { project: Project }) {
 
   return (
     <div className={`project reveal${project.reverse ? ' reverse' : ''}`} ref={rowRef}>
-      <div className="project-media" ref={tiltRef}>
+      <div className={`project-media${project.logo ? ' is-logo' : ''}`} ref={tiltRef}>
         {project.shot ? (
-          <img className="project-shot" src={project.shot} alt={t(project.nameKey)} loading="lazy" />
+          <img
+            className={project.logo ? 'project-logo' : 'project-shot'}
+            src={project.shot}
+            alt={t(project.nameKey)}
+            loading="lazy"
+          />
         ) : (
           <div className="project-shot-ph">screenshot em breve</div>
         )}
