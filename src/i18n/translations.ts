@@ -47,7 +47,7 @@ export const translations = {
     cd_tag: 'Transparência parlamentar com dados e IA',
     cd_desc:
       'Plataforma que cruza o que os parlamentares brasileiros **dizem** com **como votam**, reunindo discursos, votações e proposições da Câmara e do Senado — mais de **887 parlamentares** e **53 mil discursos** abertos para consulta.',
-    cd_role: 'Product Owner e fullstack — conduzi o produto, a integração de dados via APIs e o frontend conectado ao backend.',
+    cd_role: 'Atuei como Product Owner e fullstack: cuidei da extração e integração de dados via APIs, do backend e do frontend conectado a ele — transitando entre produto e código.',
     cd_highlight:
       'O maior desafio foi **orquestrar múltiplas APIs oficiais** da Câmara e do Senado, lidando com **paginação de dezenas de milhares de registros** e **limites de requisição (rate limit)** sem perder dados nem consistência. Estruturei a extração para varrer todo o volume respeitando esses limites e conectei tudo ao frontend que assumi — do dado bruto à interface.',
     cd_context: '2026 · acadêmico · em equipe',
@@ -58,7 +58,7 @@ export const translations = {
       'Meu laboratório de produto: um **PWA completo** para organizar rotina, instalável e com funcionamento offline como um app nativo. Nasceu de uma necessidade real e virou um projeto onde exercito produto, design e engenharia de ponta a ponta.',
     kn_role: 'Projeto solo — assumi todos os papéis: Product Owner, identidade visual, interface e toda a implementação.',
     kn_highlight:
-      'Construí a camada offline que faz o app funcionar sem conexão e se comportar como nativo no celular, com estado persistente e experiência instalável (PWA).',
+      'O núcleo do Kinetic é um motor de cálculo que **personaliza rotina e alimentação para cada perfil** — ajustando metas conforme características e objetivos de cada pessoa. Construir essa lógica de forma flexível e confiável, sozinho, foi o maior desafio de engenharia do projeto.',
     kn_context: 'pessoal · solo · em desenvolvimento',
   },
   en: {
@@ -107,7 +107,7 @@ export const translations = {
     cd_tag: 'Parliamentary transparency with data and AI',
     cd_desc:
       'A platform that cross-references what Brazilian lawmakers **say** with **how they vote**, gathering speeches, votes and bills from the House and Senate — over **887 lawmakers** and **53k speeches** open to the public.',
-    cd_role: 'Product Owner and fullstack — I led the product, the data integration across APIs, and the frontend wired to the backend.',
+    cd_role: 'I worked as Product Owner and fullstack: I handled data extraction and API integration, the backend, and the frontend wired to it — moving between product and code.',
     cd_highlight:
       'The main challenge was **orchestrating multiple official APIs** from the House and Senate, handling **pagination across tens of thousands of records** and **request rate limits** without losing data or consistency. I structured the extraction to sweep the full volume while respecting those limits, and wired it all to the frontend I owned — from raw data to interface.',
     cd_context: '2026 · academic · team',
@@ -118,7 +118,7 @@ export const translations = {
       'My product lab: a **full PWA** to organize routines, installable and working offline like a native app. It started from a real need and became where I exercise product, design and engineering end to end.',
     kn_role: 'Solo project — I took on every role: Product Owner, visual identity, interface and the entire implementation.',
     kn_highlight:
-      'I built the offline layer that lets the app work without a connection and behave like a native app on mobile, with persistent state and an installable experience (PWA).',
+      'At the core of Kinetic is a calculation engine that **personalizes routine and nutrition for each profile** — adjusting goals to each person\'s traits and objectives. Building that logic in a flexible, reliable way, solo, was the project\'s biggest engineering challenge.',
     kn_context: 'personal · solo · in progress',
   },
 } as const;
