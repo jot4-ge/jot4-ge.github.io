@@ -50,6 +50,7 @@ export const translations = {
     cd_role: 'Product Owner e fullstack — conduzi o produto, a integração de dados via APIs e o frontend conectado ao backend.',
     cd_highlight:
       'O maior desafio foi **orquestrar múltiplas APIs oficiais** da Câmara e do Senado, lidando com **paginação de dezenas de milhares de registros** e **limites de requisição (rate limit)** sem perder dados nem consistência. Estruturei a extração para varrer todo o volume respeitando esses limites e conectei tudo ao frontend que assumi — do dado bruto à interface.',
+    cd_context: '2026 · acadêmico · em equipe',
 
     kn_name: 'Kinetic',
     kn_tag: 'PWA de rotina, do conceito à arquitetura',
@@ -58,6 +59,7 @@ export const translations = {
     kn_role: 'Projeto solo — assumi todos os papéis: Product Owner, identidade visual, interface e toda a implementação.',
     kn_highlight:
       'Construí a camada offline que faz o app funcionar sem conexão e se comportar como nativo no celular, com estado persistente e experiência instalável (PWA).',
+    kn_context: 'pessoal · solo · em desenvolvimento',
   },
   en: {
     nav_about: '// about',
@@ -108,6 +110,7 @@ export const translations = {
     cd_role: 'Product Owner and fullstack — I led the product, the data integration across APIs, and the frontend wired to the backend.',
     cd_highlight:
       'The main challenge was **orchestrating multiple official APIs** from the House and Senate, handling **pagination across tens of thousands of records** and **request rate limits** without losing data or consistency. I structured the extraction to sweep the full volume while respecting those limits, and wired it all to the frontend I owned — from raw data to interface.',
+    cd_context: '2026 · academic · team',
 
     kn_name: 'Kinetic',
     kn_tag: 'A routine PWA, from concept to architecture',
@@ -116,6 +119,7 @@ export const translations = {
     kn_role: 'Solo project — I took on every role: Product Owner, visual identity, interface and the entire implementation.',
     kn_highlight:
       'I built the offline layer that lets the app work without a connection and behave like a native app on mobile, with persistent state and an installable experience (PWA).',
+    kn_context: 'personal · solo · in progress',
   },
 } as const;
 

@@ -10,6 +10,7 @@ interface Project {
   descKey: TranslationKey;
   roleKey: TranslationKey;
   highlightKey: TranslationKey;
+  contextKey: TranslationKey;
   stack: string[];
   shot: string | null;
   code: string;
@@ -24,6 +25,7 @@ const PROJECTS: Project[] = [
     descKey: 'cd_desc',
     roleKey: 'cd_role',
     highlightKey: 'cd_highlight',
+    contextKey: 'cd_context',
     stack: ['Next.js', 'Python', 'FastAPI', 'PostgreSQL', 'IA / NLP', 'Vercel'],
     shot: '/shots/contradito.png',
     code: 'https://github.com/unb-mds/2026.1-ContraDito',
@@ -35,6 +37,7 @@ const PROJECTS: Project[] = [
     descKey: 'kn_desc',
     roleKey: 'kn_role',
     highlightKey: 'kn_highlight',
+    contextKey: 'kn_context',
     stack: ['React', 'TypeScript', 'PWA', 'Vite', 'Vercel'],
     shot: '/shots/kinetic.png',
     code: 'https://github.com/jot4-ge/kinetic',
@@ -59,6 +62,7 @@ function ProjectRow({ project }: { project: Project }) {
       </div>
 
       <div className="project-body">
+        <div className="project-context">{t(project.contextKey)}</div>
         <h3 className="project-name">{t(project.nameKey)}</h3>
         <div className="project-tag">{t(project.tagKey)}</div>
         <p className="project-desc"><RichText text={t(project.descKey)} /></p>
