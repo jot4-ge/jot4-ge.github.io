@@ -252,7 +252,8 @@ h1.hero-name .accent { color: var(--accent); }
 
 /* ===== ia & dados ===== */
 .ai-intro { max-width: 620px; color: var(--text-dim); font-size: 16px; margin-top: 16px; margin-bottom: 40px; }
-.ai-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.ai-main { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+.ai-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
 .ai-card { border: 1px solid var(--line); background: var(--bg-card); border-radius: 12px; padding: 22px 20px; transition: border-color .25s, transform .25s; }
 .ai-card:hover { border-color: var(--accent); transform: translateY(-3px); }
 .ai-card-n { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-bottom: 12px; }
@@ -264,4 +265,27 @@ h1.hero-name .accent { color: var(--accent); }
 }
 @media (prefers-reduced-motion: reduce) {
   .ai-card:hover { transform: none; }
+}
+
+/* terminal animado */
+.term { border: 1px solid var(--line-bright); border-radius: 12px; overflow: hidden; background: #0a0c0d; font-family: var(--mono); box-shadow: 0 20px 50px -20px rgba(0,0,0,.6); }
+:root[data-theme="light"] .term { background: #14171a; }
+.term-bar { display: flex; align-items: center; gap: 7px; padding: 11px 14px; background: color-mix(in srgb, #ffffff 4%, #0a0c0d); border-bottom: 1px solid var(--line); }
+.term-dot { width: 11px; height: 11px; border-radius: 50%; }
+.term-dot.r { background: #ff5f57; } .term-dot.y { background: #febc2e; } .term-dot.g { background: #28c840; }
+.term-title { font-size: 11px; color: var(--text-faint); margin-left: 8px; }
+.term-body { padding: 16px 16px 20px; font-size: 12.5px; line-height: 1.85; min-height: 200px; }
+.term-line { white-space: pre-wrap; word-break: break-word; color: #c9d1d0; }
+.term-line.cmd { color: #e8e6e1; }
+.term-line.cmd::before { content: "$ "; color: var(--accent); }
+.term-line.out::before { content: "> "; color: var(--text-faint); }
+.term-line.ok { color: var(--green); }
+.term-cursor { display: inline-block; width: 8px; height: 15px; background: var(--green); vertical-align: text-bottom; margin-left: 2px; animation: blink 1s steps(2) infinite; }
+@keyframes blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
+
+@media (max-width: 820px) {
+  .ai-main { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .term-cursor { animation: none; }
 }
