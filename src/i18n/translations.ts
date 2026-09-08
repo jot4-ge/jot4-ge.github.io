@@ -60,6 +60,17 @@ export const translations = {
     kn_highlight:
       'O núcleo do Kinetic é um motor de cálculo que **personaliza rotina e alimentação para cada perfil** — ajustando metas conforme características e objetivos de cada pessoa. Construir essa lógica de forma flexível e confiável, sozinho, foi o maior desafio de engenharia do projeto.',
     kn_context: 'pessoal · solo · em desenvolvimento',
+
+    eb_ai: 'ia como ferramenta, não como buzzword',
+    ai_title: 'IA no fluxo, não na vitrine.',
+    ai_intro:
+      'Não trato IA como enfeite. Uso no meu processo real: acelero o desenvolvimento, integro modelos onde eles resolvem problemas de verdade e trato dados do bruto ao útil — do código à interface.',
+    ai_1_t: 'Desenvolvimento assistido',
+    ai_1_d: 'Uso IA para escrever, revisar e acelerar código, mantendo o controle das decisões de arquitetura. Inclusive, este portfólio foi construído assim.',
+    ai_2_t: 'Integração de modelos',
+    ai_2_d: 'Trabalho com LLMs (Claude no dia a dia, Gemini na bagagem) aplicados a tarefas de linguagem e automação — onde fazem sentido, não por moda.',
+    ai_3_t: 'Dados',
+    ai_3_d: 'Extração, integração e tratamento de dados de múltiplas fontes — a base que faz uma aplicação de dados ser confiável.',
   },
   en: {
     nav_about: '// about',
@@ -120,6 +131,17 @@ export const translations = {
     kn_highlight:
       'At the core of Kinetic is a calculation engine that **personalizes routine and nutrition for each profile** — adjusting goals to each person\'s traits and objectives. Building that logic in a flexible, reliable way, solo, was the project\'s biggest engineering challenge.',
     kn_context: 'personal · solo · in progress',
+
+    eb_ai: 'ai as a tool, not a buzzword',
+    ai_title: 'AI in the workflow, not on display.',
+    ai_intro:
+      'I do not treat AI as decoration. I use it in my real process: I speed up development, integrate models where they actually solve problems, and turn data from raw to useful — from code to interface.',
+    ai_1_t: 'Assisted development',
+    ai_1_d: 'I use AI to write, review and speed up code while keeping control of architecture decisions. This very portfolio was built that way.',
+    ai_2_t: 'Model integration',
+    ai_2_d: 'I work with LLMs (Claude day to day, Gemini in my background) applied to language and automation tasks — where they make sense, not for hype.',
+    ai_3_t: 'Data',
+    ai_3_d: 'Extraction, integration and treatment of data from multiple sources — the foundation that makes a data application reliable.',
   },
 } as const;
 
