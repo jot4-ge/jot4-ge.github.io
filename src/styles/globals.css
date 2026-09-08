@@ -289,3 +289,32 @@ h1.hero-name .accent { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   .term-cursor { animation: none; }
 }
+
+/* ===== stack ===== */
+.stack-intro { max-width: 620px; color: var(--text-dim); font-size: 16px; margin-top: 16px; margin-bottom: 44px; }
+.stack-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.stack-group .grp-title { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-faint); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.stack-items { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.tech {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--mono); font-size: 13px; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--line);
+  padding: 8px 13px; border-radius: 8px; cursor: default;
+  transition: color .25s, border-color .25s, transform .25s, box-shadow .25s;
+}
+.tech-ic { font-size: 17px; display: flex; color: var(--text-faint); transition: color .25s; }
+.tech:hover {
+  color: var(--text); border-color: var(--tech-color, var(--accent));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--tech-color, var(--accent)) 22%, transparent);
+}
+.tech:hover .tech-ic { color: var(--tech-color, var(--accent)); }
+
+@media (max-width: 760px) {
+  .stack-groups { grid-template-columns: 1fr; gap: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tech { transition: color .25s, border-color .25s; }
+  .tech:hover { transform: none; box-shadow: none; }
+}

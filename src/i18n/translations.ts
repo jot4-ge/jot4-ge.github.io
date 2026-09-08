@@ -71,6 +71,14 @@ export const translations = {
     ai_2_d: 'Trabalho com LLMs (Claude no dia a dia, Gemini na bagagem) aplicados a tarefas de linguagem e automação — onde fazem sentido, não por moda.',
     ai_3_t: 'Dados',
     ai_3_d: 'Extração, integração e tratamento de dados de múltiplas fontes — a base que faz uma aplicação de dados ser confiável.',
+
+    eb_stack: 'com o que eu construo',
+    stack_title: 'Minha stack, por camadas.',
+    stack_intro: 'As ferramentas que uso para levar uma ideia do conceito ao deploy — organizadas por onde atuam.',
+    st_ai: 'IA & LLM',
+    st_front: 'Frontend',
+    st_back: 'Backend',
+    st_devops: 'Ambiente & DevOps',
   },
   en: {
     nav_about: '// about',
@@ -142,6 +150,14 @@ export const translations = {
     ai_2_d: 'I work with LLMs (Claude day to day, Gemini in my background) applied to language and automation tasks — where they make sense, not for hype.',
     ai_3_t: 'Data',
     ai_3_d: 'Extraction, integration and treatment of data from multiple sources — the foundation that makes a data application reliable.',
+
+    eb_stack: 'what I build with',
+    stack_title: 'My stack, by layer.',
+    stack_intro: 'The tools I use to take an idea from concept to deploy — organized by where they operate.',
+    st_ai: 'AI & LLM',
+    st_front: 'Frontend',
+    st_back: 'Backend',
+    st_devops: 'Environment & DevOps',
   },
 } as const;
 
