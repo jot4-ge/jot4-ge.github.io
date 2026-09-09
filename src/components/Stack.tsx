@@ -3,9 +3,9 @@ import {
   SiReact, SiNextdotjs, SiTypescript, SiHtml5, SiCss,
   SiPython, SiC, SiSupabase, SiPostgresql,
   SiGooglecloud, SiDocker, SiLinux, SiGit, SiMarkdown,
-  SiGooglegemini,
+  SiGooglegemini, SiAnthropic,
 } from 'react-icons/si';
-import { LuTerminal, LuInfinity } from 'react-icons/lu';
+import { LuInfinity } from 'react-icons/lu';
 import { useApp } from '../context/AppContext';
 import { useReveal } from '../hooks/useReveal';
 import type { TranslationKey } from '../i18n/translations';
@@ -26,7 +26,7 @@ const GROUPS: Group[] = [
     titleKey: 'st_ai',
     items: [
       { name: 'Google Gemini', icon: SiGooglegemini, color: '#8E75B2' },
-      { name: 'Claude Code', icon: LuTerminal, color: '#D97757' },
+      { name: 'Claude Code', icon: SiAnthropic, color: '#D97757' },
     ],
   },
   {
