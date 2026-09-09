@@ -3,7 +3,7 @@ import {
   SiReact, SiNextdotjs, SiTypescript, SiHtml5, SiCss,
   SiPython, SiC, SiSupabase, SiPostgresql,
   SiGooglecloud, SiDocker, SiLinux, SiGit, SiMarkdown,
-  SiGooglegemini, SiAnthropic,
+  SiGooglegemini, SiClaude, SiClaudecode,
 } from 'react-icons/si';
 import { LuInfinity } from 'react-icons/lu';
 import { useApp } from '../context/AppContext';
@@ -26,7 +26,8 @@ const GROUPS: Group[] = [
     titleKey: 'st_ai',
     items: [
       { name: 'Google Gemini', icon: SiGooglegemini, color: '#8E75B2' },
-      { name: 'Claude Code', icon: SiAnthropic, color: '#D97757' },
+      { name: 'Claude', icon: SiClaude, color: '#D97757' },
+      { name: 'Claude Code', icon: SiClaudecode, color: '#D97757' },
     ],
   },
   {
