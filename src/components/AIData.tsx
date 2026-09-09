@@ -1,6 +1,7 @@
 import { useApp } from '../context/AppContext';
 import { useReveal } from '../hooks/useReveal';
 import { useTypewriter, type TermLine } from '../hooks/useTypewriter';
+import { useTilt } from '../hooks/useTilt';
 import type { TranslationKey } from '../i18n/translations';
 
 interface Frente {
@@ -32,26 +33,30 @@ function Terminal() {
   const currentIdx = lineCount;
   const showCurrent = !done && currentIdx < lines.length;
 
+  const tiltRef = useTilt<HTMLDivElement>(4);
+
   return (
-    <div className="term" ref={ref} aria-hidden="true">
-      <div className="term-bar">
-        <span className="term-dot r" />
-        <span className="term-dot y" />
-        <span className="term-dot g" />
-        <span className="term-title">pipeline.sh</span>
-      </div>
-      <div className="term-body">
-        {visible.map((line, i) => (
-          <div className={`term-line ${lines[i]?.type ?? 'out'}`} key={i}>
-            {line}
-          </div>
-        ))}
-        {showCurrent && (
-          <div className={`term-line ${lines[currentIdx]?.type ?? 'out'}`}>
-            {partial}
-            <span className="term-cursor" />
-          </div>
-        )}
+    <div ref={ref}>
+      <div className="term" ref={tiltRef} aria-hidden="true">
+        <div className="term-bar">
+          <span className="term-dot r" />
+          <span className="term-dot y" />
+          <span className="term-dot g" />
+          <span className="term-title">pipeline.sh</span>
+        </div>
+        <div className="term-body">
+          {visible.map((line, i) => (
+            <div className={`term-line ${lines[i]?.type ?? 'out'}`} key={i}>
+              {line}
+            </div>
+          ))}
+          {showCurrent && (
+            <div className={`term-line ${lines[currentIdx]?.type ?? 'out'}`}>
+              {partial}
+              <span className="term-cursor" />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
