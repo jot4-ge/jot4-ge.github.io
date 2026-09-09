@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import { useReveal } from '../hooks/useReveal';
 import { useTypewriter, type TermLine } from '../hooks/useTypewriter';
@@ -18,14 +19,17 @@ const FRENTES: Frente[] = [
 function Terminal() {
   const { t } = useApp();
 
-  const lines: TermLine[] = [
-    { text: t('term_cmd'), type: 'cmd' },
-    { text: t('term_1'), type: 'out' },
-    { text: t('term_2'), type: 'out' },
-    { text: t('term_3'), type: 'out' },
-    { text: t('term_4'), type: 'out' },
-    { text: t('term_ok'), type: 'ok' },
-  ];
+  const lines: TermLine[] = useMemo(
+    () => [
+      { text: t('term_cmd'), type: 'cmd' },
+      { text: t('term_1'), type: 'out' },
+      { text: t('term_2'), type: 'out' },
+      { text: t('term_3'), type: 'out' },
+      { text: t('term_4'), type: 'out' },
+      { text: t('term_ok'), type: 'ok' },
+    ],
+    [t],
+  );
 
   const { ref, lineCount, partial, done } = useTypewriter(lines);
 
