@@ -14,22 +14,23 @@ const FRENTES: Frente[] = [
   { titleKey: 'ai_3_t', descKey: 'ai_3_d' },
 ];
 
-const TERM_LINES: TermLine[] = [
-  { text: 'joão --run pipeline', type: 'cmd' },
-  { text: 'conectando à API da Câmara e do Senado...', type: 'out' },
-  { text: 'extraindo discursos... 53.000 ✓', type: 'out' },
-  { text: 'cruzando com votações... 51.000 ✓', type: 'out' },
-  { text: '887 parlamentares processados', type: 'out' },
-  { text: 'dados prontos — do bruto ao útil', type: 'ok' },
-];
-
 function Terminal() {
-  const { ref, lineCount, partial, done } = useTypewriter(TERM_LINES);
+  const { t } = useApp();
 
-  // linhas já completas + a linha atual sendo digitada (se houver)
-  const visible = TERM_LINES.slice(0, lineCount).map((l) => l.text);
+  const lines: TermLine[] = [
+    { text: t('term_cmd'), type: 'cmd' },
+    { text: t('term_1'), type: 'out' },
+    { text: t('term_2'), type: 'out' },
+    { text: t('term_3'), type: 'out' },
+    { text: t('term_4'), type: 'out' },
+    { text: t('term_ok'), type: 'ok' },
+  ];
+
+  const { ref, lineCount, partial, done } = useTypewriter(lines);
+
+  const visible = lines.slice(0, lineCount).map((l) => l.text);
   const currentIdx = lineCount;
-  const showCurrent = !done && currentIdx < TERM_LINES.length;
+  const showCurrent = !done && currentIdx < lines.length;
 
   return (
     <div className="term" ref={ref} aria-hidden="true">
@@ -41,12 +42,12 @@ function Terminal() {
       </div>
       <div className="term-body">
         {visible.map((line, i) => (
-          <div className={`term-line ${TERM_LINES[i]?.type ?? 'out'}`} key={i}>
+          <div className={`term-line ${lines[i]?.type ?? 'out'}`} key={i}>
             {line}
           </div>
         ))}
         {showCurrent && (
-          <div className={`term-line ${TERM_LINES[currentIdx]?.type ?? 'out'}`}>
+          <div className={`term-line ${lines[currentIdx]?.type ?? 'out'}`}>
             {partial}
             <span className="term-cursor" />
           </div>

@@ -79,6 +79,12 @@ export const translations = {
     st_front: 'Frontend',
     st_back: 'Backend',
     st_devops: 'Ambiente & DevOps',
+    term_cmd: 'joão --run pipeline',
+    term_1: 'conectando à API da Câmara e do Senado...',
+    term_2: 'extraindo discursos... 53.000 ✓',
+    term_3: 'cruzando com votações... 51.000 ✓',
+    term_4: '887 parlamentares processados',
+    term_ok: 'dados prontos — do bruto ao útil',
   },
   en: {
     nav_about: '// about',
@@ -158,6 +164,12 @@ export const translations = {
     st_front: 'Frontend',
     st_back: 'Backend',
     st_devops: 'Environment & DevOps',
+    term_cmd: 'joão --run pipeline',
+    term_1: 'connecting to the House and Senate APIs...',
+    term_2: 'extracting speeches... 53,000 ✓',
+    term_3: 'cross-referencing votes... 51,000 ✓',
+    term_4: '887 lawmakers processed',
+    term_ok: 'data ready — from raw to useful',
   },
 } as const;
 

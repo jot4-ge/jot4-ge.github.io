@@ -1,6 +1,6 @@
 import type { IconType } from 'react-icons';
 import {
-  SiReact, SiNextdotjs, SiTypescript, SiHtml5, SiCss3,
+  SiReact, SiNextdotjs, SiTypescript, SiHtml5, SiCss,
   SiPython, SiC, SiSupabase, SiPostgresql,
   SiGooglecloud, SiDocker, SiLinux, SiGit, SiMarkdown,
   SiGooglegemini,
@@ -36,7 +36,7 @@ const GROUPS: Group[] = [
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
       { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
-      { name: 'CSS3', icon: SiCss3, color: '#1572B6' },
+      { name: 'CSS3', icon: SiCss, color: '#1572B6' },
     ],
   },
   {
