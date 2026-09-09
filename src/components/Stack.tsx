@@ -33,7 +33,7 @@ const GROUPS: Group[] = [
   {
     titleKey: 'st_front',
     items: [
-      { name: 'Next.js', icon: SiNextdotjs, color: '#e8e6e1' },
+      { name: 'Next.js', icon: SiNextdotjs, color: 'var(--tech-neutral)' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
       { name: 'HTML5', icon: SiHtml5, color: '#E34F26' },
@@ -57,7 +57,7 @@ const GROUPS: Group[] = [
       { name: 'CI/CD', icon: LuInfinity, color: '#57c96a' },
       { name: 'Linux', icon: SiLinux, color: '#FCC624' },
       { name: 'Git', icon: SiGit, color: '#F05032' },
-      { name: 'Markdown', icon: SiMarkdown, color: '#e8e6e1' },
+      { name: 'Markdown', icon: SiMarkdown, color: 'var(--tech-neutral)' },
     ],
   },
 ];
