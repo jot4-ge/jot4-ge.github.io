@@ -10,6 +10,7 @@ import { Projects } from './components/Projects';
 import { AIData } from './components/AIData';
 import { Stack } from './components/Stack';
 import { Timeline } from './components/Timeline';
+import { Contact } from './components/Contact';
 
 export default function App() {
   useLenis();
@@ -27,6 +28,7 @@ export default function App() {
         <AIData />
         <Stack />
         <Timeline />
+        <Contact />
       </main>
     </AppProvider>
   );
