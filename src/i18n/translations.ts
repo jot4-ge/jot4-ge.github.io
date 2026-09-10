@@ -109,6 +109,15 @@ export const translations = {
     tl_7_p: '2º sem 2026 · atualmente',
     tl_7_t: 'Atualmente',
     tl_7_d: 'Monitor de Matemática Discreta na UnB e Product Owner num projeto da disciplina de Requisitos de Software — conciliando o papel de explicar e o de conduzir produto.',
+
+    eb_contact: 'vamos conversar',
+    contact_title: 'Bora construir algo?',
+    contact_intro: 'Estou em busca de oportunidades de estágio e projetos que me desafiem. Se o que você viu aqui fez sentido, vamos conversar.',
+    contact_email: 'me manda um email',
+    contact_linkedin: 'conecta no LinkedIn',
+    contact_github: 'veja meu código',
+    contact_loc: 'Brasília, DF · Brasil',
+    footer_note: 'Feito com React, TypeScript e um pouco de café.',
   },
   en: {
     nav_about: '// about',
@@ -218,6 +227,15 @@ export const translations = {
     tl_7_p: 'H2 2026 · present',
     tl_7_t: 'Currently',
     tl_7_d: 'Discrete Mathematics teaching assistant at UnB and Product Owner on a project for the Software Requirements course — balancing explaining and leading product.',
+
+    eb_contact: "let's talk",
+    contact_title: 'Shall we build something?',
+    contact_intro: "I'm looking for internship opportunities and projects that challenge me. If what you saw here resonated, let's talk.",
+    contact_email: 'send me an email',
+    contact_linkedin: 'connect on LinkedIn',
+    contact_github: 'see my code',
+    contact_loc: 'Brasília, DF · Brazil',
+    footer_note: 'Built with React, TypeScript and a bit of coffee.',
   },
 } as const;
 
