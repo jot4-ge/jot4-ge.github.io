@@ -38,14 +38,19 @@ export function About() {
         </p>
         <h2 className="title reveal" ref={titleRef}>{t('about_title')}</h2>
 
-        <div className="about-grid reveal" ref={bioRef}>
-          <p><RichText text={t('about_1')} /></p>
-          <p><RichText text={t('about_2')} /></p>
-          <p><RichText text={t('about_3')} /></p>
-          <div className="chips">
-            {CHIPS.map((c) => (
-              <span className="chip" key={c}>{c}</span>
-            ))}
+        <div className="about-top reveal" ref={bioRef}>
+          <div className="about-grid">
+            <p><RichText text={t('about_1')} /></p>
+            <p><RichText text={t('about_2')} /></p>
+            <p><RichText text={t('about_3')} /></p>
+            <div className="chips">
+              {CHIPS.map((c) => (
+                <span className="chip" key={c}>{c}</span>
+              ))}
+            </div>
+          </div>
+          <div className="about-avatar-wrap">
+            <img className="about-avatar" src="/avatar.png" alt="João Guilherme" />
           </div>
         </div>
 
