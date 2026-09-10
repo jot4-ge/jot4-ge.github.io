@@ -322,3 +322,26 @@ h1.hero-name .accent { color: var(--accent); }
   .tech { transition: color .25s, border-color .25s; }
   .tech:hover { transform: none; box-shadow: none; }
 }
+
+/* ===== trajetória ===== */
+.timeline { position: relative; max-width: 720px; margin-top: 48px; padding-left: 34px; }
+/* linha base (trilho) */
+.timeline::before { content: ""; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+/* linha de progresso (cresce com o scroll via --tl-progress) */
+.timeline::after { content: ""; position: absolute; left: 8px; top: 6px; width: 2px; height: var(--tl-progress, 0%); background: var(--accent); transition: height .1s linear; }
+
+.tl-item { position: relative; padding-bottom: 40px; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-dot { position: absolute; left: -34px; top: 4px; width: 18px; height: 18px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line-bright); display: flex; align-items: center; justify-content: center; transition: border-color .3s, background .3s; }
+.tl-dot::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--line-bright); transition: background .3s, box-shadow .3s; }
+.tl-item.in .tl-dot { border-color: var(--accent); }
+.tl-item.in .tl-dot::after { background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+
+.tl-period { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-bottom: 4px; }
+.tl-item-title { font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.tl-desc { font-size: 14.5px; color: var(--text-dim); line-height: 1.6; }
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline::after { transition: none; }
+  .tl-dot, .tl-dot::after { transition: none; }
+}
