@@ -117,7 +117,7 @@ export const translations = {
     contact_linkedin: 'conecta no LinkedIn',
     contact_github: 'veja meu código',
     contact_loc: 'Brasília, DF · Brasil',
-    footer_note: 'Feito com React, TypeScript e um pouco de café.',
+    footer_note: 'Feito com React, TypeScript e um pouco de energético.',
   },
   en: {
     nav_about: '// about',
@@ -235,7 +235,7 @@ export const translations = {
     contact_linkedin: 'connect on LinkedIn',
     contact_github: 'see my code',
     contact_loc: 'Brasília, DF · Brazil',
-    footer_note: 'Built with React, TypeScript and a bit of coffee.',
+    footer_note: 'Built with React, TypeScript and a bit of energy drink.',
   },
 } as const;
 
