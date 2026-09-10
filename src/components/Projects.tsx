@@ -76,12 +76,12 @@ function ProjectRow({ project }: { project: Project }) {
 
         <div className="project-block">
           <div className="lbl">{t('p_role')}</div>
-          <div className="val">{t(project.roleKey)}</div>
+          <div className="val"><RichText text={t(project.roleKey)} /></div>
         </div>
 
         <div className="project-highlight">
           <div className="lbl">{t('p_highlight')}</div>
-          <div className="val">{t(project.highlightKey)}</div>
+          <div className="val"><RichText text={t(project.highlightKey)} /></div>
         </div>
 
         <div className="project-block">
