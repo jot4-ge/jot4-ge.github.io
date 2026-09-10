@@ -28,7 +28,7 @@ export const translations = {
     about_1:
       'Sou o **João Guilherme**, 21 anos, **estudante de Engenharia de Software na UnB**. Comecei a programar ainda na escola, na aula de robótica, entre um Arduino e minhas primeiras linhas de HTML, CSS e JavaScript. A curiosidade nunca mais parou.',
     about_2:
-      'Atuo como **desenvolvedor fullstack**: fui **Product Owner e dev** no ContraDito, uma plataforma de dados real com pipeline de IA, e desenvolvo sozinho o **Kinetic**, do conceito à arquitetura. Também sou **monitor de Matemática Discreta** na UnB — ajudar os colegas a destravarem afia meu gosto por explicar e resolver problemas.',
+      'Atuo como **desenvolvedor fullstack**: fui Product Owner e dev no **ContraDito** — uma plataforma que cruza discursos e votos de parlamentares com dados e IA — e desenvolvo sozinho o **Kinetic**, um PWA de rotina que personaliza treino e alimentação. Também sou **monitor de Matemática Discreta** na UnB — ajudar os colegas a destravarem afia meu gosto por explicar e resolver problemas.',
     about_3:
       'Fora do código, me movo por **disciplina**: treino, pratico **artes marciais** e já joguei muitos esportes — campeão de futsal e medalhista no atletismo. E, seja no treino ou codando de madrugada, **sempre tem uma playlist rodando** — música é o combustível que mantém o ritmo. Essa mentalidade de treino é a mesma que levo pra engenharia: consistência, evolução e vontade de vencer o próximo desafio.',
     sp_t: '// no loop enquanto codo',
@@ -146,7 +146,7 @@ export const translations = {
     about_1:
       "I'm **João Guilherme**, 21, a **Software Engineering student at UnB**. I started coding back in school, in robotics class, between Arduino and my first lines of HTML, CSS and JavaScript. The curiosity never stopped since.",
     about_2:
-      "I work as a **fullstack developer**: I was **Product Owner and dev** on ContraDito, a real data platform with an AI pipeline, and I solo-develop **Kinetic**, from concept to architecture. I'm also a **Discrete Mathematics teaching assistant** at UnB — helping classmates get unstuck sharpens my love for explaining and solving problems.",
+      "I work as a **fullstack developer**: I was Product Owner and dev on **ContraDito** — a platform that cross-references lawmakers' speeches and votes with data and AI — and I solo-develop **Kinetic**, a routine PWA that personalizes training and nutrition. I'm also a **Discrete Mathematics teaching assistant** at UnB — helping classmates get unstuck sharpens my love for explaining and solving problems.",
     about_3:
       'Outside of code, I run on **discipline**: I train, practice **martial arts** and have played many sports — futsal champion and athletics medalist. And whether training or coding late at night, **there is always a playlist going** — music is the fuel that keeps the rhythm. That training mindset is the same one I bring to engineering: consistency, growth and the drive to beat the next challenge.',
     sp_t: '// on loop while I code',
