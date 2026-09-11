@@ -179,11 +179,7 @@ h1.hero-name .accent { color: var(--accent); }
 
 /* layout bio + avatar */
 .about-top { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
-.about-avatar { width: 260px; max-width: 100%; height: auto; display: block; will-change: transform; animation: float 4s ease-in-out infinite; }
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
+.about-avatar { width: 260px; max-width: 100%; height: auto; display: block; will-change: transform; }
 .about-avatar-wrap { display: flex; justify-content: center; }
 
 @media (max-width: 820px) {
@@ -192,7 +188,7 @@ h1.hero-name .accent { color: var(--accent); }
   .about-avatar { width: 200px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .about-avatar { will-change: auto; animation: none; }
+  .about-avatar { will-change: auto; }
 }
 .chips { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 6px; }
 .chip { font-family: var(--mono); font-size: 12px; color: var(--text-dim); border: 1px solid var(--line-bright); padding: 5px 11px; border-radius: 6px; cursor: default; transition: color .2s, border-color .2s, transform .2s, box-shadow .2s; }

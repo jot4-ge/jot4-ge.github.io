@@ -26,6 +26,7 @@ export function About() {
   const bioRef = useReveal<HTMLDivElement>();
   const spotifyRef = useReveal<HTMLDivElement>();
   const tiltRef = useTilt<HTMLDivElement>(5);
+  const photoRef = useTilt<HTMLImageElement>(4);
 
   const { t } = useApp();
   const [featured, ...rest] = TRACKS;
@@ -50,7 +51,7 @@ export function About() {
             </div>
           </div>
           <div className="about-avatar-wrap">
-            <img className="about-avatar" src="/avatar.png" alt="João Guilherme" />
+            <img className="about-avatar" src="/foto.png" alt="João Guilherme" ref={photoRef} />
           </div>
         </div>
 
